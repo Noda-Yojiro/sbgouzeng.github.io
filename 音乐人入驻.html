@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HTML音乐人入驻网站</title>
+  <!-- 这里可以添加网站的样式表和其他头部信息 -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 30px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    }
+    form {
+      max-width: 400px;
+      margin: 0 auto 20px;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    label, input {
+      display: block;
+      margin-bottom: 10px;
+    }
+    input[type="text"], input[type="email"], textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      background-color: #007BFF;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .bio-img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .instructions {
+      text-align: center;
+      color: #666;
+      font-size: 14px;
+      margin-bottom: 40px;
+    }
+    .info-card {
+      background-color: #fff;
+      border-radius: 5px;
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+    }
+    .info-card h2 {
+      color: #007BFF;
+      margin-bottom: 10px;
+    }
+    .info-card p {
+      color: #444;
+      line-height: 1.6;
+    }
+    /* 添加按钮的动画效果 */
+    button:hover {
+      background-color: #0056b3;
+    }
+    /* 添加图片的放大效果 */
+    .bio-img:hover {
+      transform: scale(1.1);
+      transition: transform 0.2s ease-in-out;
+    }
+    /* 添加信息卡片的阴影效果 */
+    .info-card:hover {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    /* 为页面添加背景图案 */
+    body {
+      background-image: url('https://example.com/background_pattern.jpg');
+      background-repeat: repeat;
+    }
+    /* 调整页面主要内容的背景颜色和边距 */
+    .main-content {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      margin-bottom: 40px;
+    }
+    /* 自定义标题样式 */
+    h2 {
+      color: #007BFF;
+      margin-bottom: 20px;
+    }
+    /* 添加音乐人入驻申请状态样式 */
+    .status {
+      text-align: center;
+      font-weight: bold;
+      font-size: 18px;
+      color: #007BFF;
+      margin-bottom: 30px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>欢迎音乐人入驻</h1>
+    <form action="/submit" method="post">
+      <label for="artistName">艺名：</label>
+      <input type="text" id="artistName" name="artistName" required>
+      <label for="email">邮箱：</label>
+      <input type="email" id="email" name="email" required>
+      <label for="genre">音乐风格：</label>
+      <input type="text" id="genre" name="genre" required>
+      <label for="bio">个人简介：</label>
+      <textarea id="bio" name="bio" rows="4" required></textarea>
+      <button type="submit">提交</button>
+    </form>
+
+    <!-- 插入音乐人的图片 -->
+    <img class="bio-img" src="https://example.com/artist_image.jpg" alt="音乐人照片">
+
+    <!-- 添加更多说明文字 -->
+    <div class="instructions">
+      <p>请填写以上表单来申请入驻音乐人。</p>
+      <p>我们欢迎各种音乐风格，无论是流行、摇滚、电子、嘻哈或古典。</p>
+      <p>加入我们，展示你的音乐才华，并与全球观众分享你的音乐。</p>
+    </div>
+
+    <!-- 添加更多效果和信息 -->
+    <div class="main-content">
+      <div class="info-card">
+        <h2>入驻要求</h2>
+        <p>我们鼓励原创音乐和独立音乐人加入。</p>
+        <p>你可以是独唱歌手、乐队成员、制作人或DJ。</p>
+        <p>你的音乐作品应该符合版权法和道德标准。</p>
+      </div>
+
+      <div class="info-card">
+        <h2>入驻优势</h2>
+        <p>通过入驻我们的平台，你将获得全球观众的机会。</p>
+        <p>你的音乐将在流媒体平台上推广。</p>
+        <p>你将有机会与其他音乐人和产业专业人士合作。</
